@@ -1,7 +1,7 @@
 <?php
 session_start();
 include_once 'conexion.php';
-$instancia= new conexion("localhost","evaipi","postgres", "Chris210591");
+$instancia= new conexion("localhost","evaipi","user", "pass");
 	$comentario=$_POST['comment'];
 	$iduser = $_POST["iduser"];
 		if ($iduser != null && $comentario != null)

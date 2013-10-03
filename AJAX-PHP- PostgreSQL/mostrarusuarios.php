@@ -1,6 +1,6 @@
 <?php
 include_once 'conexion.php';
-$instancia= new conexion("localhost","evaipi","postgres", "Chris210591");
+$instancia= new conexion("localhost","evaipi","user", "pass");
 	$cons='Select iduser,nombre FROM "usuarios";';
 	$usuario='';
 	$respuesta= $instancia->Extraer($cons);

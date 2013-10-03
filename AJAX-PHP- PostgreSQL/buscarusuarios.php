@@ -1,7 +1,7 @@
 <?php
 
 include_once 'conexion.php';
-$instancia= new conexion("localhost","evaipi","postgres", "Chris210591");
+$instancia= new conexion("localhost","evaipi","user", "pass");
 	$nombre=$_GET["nombre"];
 	$cons="Select iduser,nombre FROM usuarios where lower(nombre) like lower('%".$nombre."%')";
 	$respuesta= $instancia->Extraer($cons);
